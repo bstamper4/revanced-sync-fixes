@@ -1,0 +1,28 @@
+revanced-sync-fixes
+Copyright (C) 2026 the revanced-sync-fixes contributors
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation, either version 3 of the License,
+or (at your option) any later version. It is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE. See the LICENSE file for the full text.
+
+The patches were written for Sync for Reddit by Laurence Dawson, which is not affiliated with this
+project. Sync for Reddit itself is not included, modified in any repository copy, or redistributed
+here; the patches only change an APK the user already has.
+
+Parts of the approach were derived from these GPL-3.0 projects:
+
+  revanced-rif-fixes (notBrian2)      https://github.com/notBrian2/revanced-rif-fixes
+      The gallery /api/info to /comments rewrite, the morechildren to /comments rewrite and the
+      imgur album metadata work were first done for rif is fun there.
+
+  sync-reddit-fixes (trulow)          https://github.com/trulow/sync-reddit-fixes
+      A Morphe port of the same fixes to Sync for Reddit, used as a reference for Sync's classes.
+
+  patcheddit (wchill, KingOfPoptart)  https://github.com/wchill/patcheddit
+      The original Redgifs temporary token and user agent handling.
+
+The build scripts use the ReVanced CLI and patcher (GPL-3.0), R8/D8 (BSD-3-Clause), OkHttp and Okio
+(Apache-2.0), Volley (Apache-2.0) and the Android SDK (Apache-2.0). None of them are redistributed
+here; scripts/fetch-toolchain.sh downloads them from their upstream sources.
